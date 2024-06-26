@@ -1,0 +1,259 @@
+body{
+    background-position: 50% 50%;
+    min-height: 585px !important;
+}
+.menu{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(pastel.jpg) ;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.nav .logo h1{
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    font-family:glossy sheen shine regular;
+    color: #bbb286;
+}
+.nav .logo b{
+    color: #364b2c;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav ul li{
+    margin-right: 30px;
+    color: #22221d;
+}
+.nav ul li a{
+    text-decoration: none;
+    color:#22221d;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.nav ul .active::after{
+    content: '';
+    width: 50%;
+    height:3px ;
+    background-color: #ff511c;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+input{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+ }
+
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.content .content-left{
+    display: block;
+    width: 100%;
+}
+.content .content-left .info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content .content-left .info h2{
+    font-size: 60px;
+    font-family: serif;
+    margin-bottom: 30px;
+    color: #22221d;
+    text-align: center;
+    align-items: center;
+}
+.content .content-left .info p{
+    font-size: 25px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family:Cambria;
+    color: #22221d;
+}
+.category{
+    width: 100%; 
+    display: flex;
+    margin-bottom: 50px; 
+    justify-content: center; 
+   background-color:#ece2ae ;
+    
+}
+ .category .card-list .card img{
+    width: 400px;
+    height: auto;
+    bottom: 140px;
+    left: 50px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat:no-repeat ;
+    position: absolute;
+    box-shadow: 0 20px 20px #facdbf;
+    border-radius: 50%;
+    
+    
+} 
+
+.category .list-items{
+    width: 90%;
+    position: relative;
+    margin-top: 50Px;
+
+} 
+.category .list-items h1{
+    font-size: 35px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family:glossy sheen shine regular;
+    color: #22221d;
+    margin-bottom: 10%;
+
+}
+.category .list-items .card-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.category .card-list .card{
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 16px;
+    border-radius: 10px;
+    position: relative;
+    background: #ffffff;
+    outline: 2px solid #928b89 ;
+    margin-bottom: 70px;
+    
+} 
+.category .card-list .card img{
+    width: 100px;
+    height: auto;
+    bottom: 220px;
+    left: 65px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat:no-repeat ;
+    position: absolute;
+    box-shadow: 0 20px 20px #b9a29b;
+    border-radius: 50%;
+}
+.category .card-list .card .kue_title{
+  padding: 40spx 0 10pxx; 
+}
+
+
+.category .list-items .card-list .card .kue_title h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: #27374D;
+}
+.category .card .desc-food p{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+.category .card .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #928b89;
+} 
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.tentang{
+    width: 100%;
+    padding:100px 0px ;
+}
+
+.tentang-put img{
+    height: auto;
+    width: 430px;
+    border: 2px solid #272829;
+    border-radius: 15px;
+   
+  
+}
+.tentang-ku{
+   width:550px ; 
+}
+.tentang-put {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+}
+.tentang-ku h2{
+    color: #22221d;
+    letter-spacing:2px ;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #272829;
+    text-align: center;
+}
+.tentang-ku p{
+    letter-spacing: 1px;
+    line-height: 25px;
+    font-size: 15px;
+    text-align: justify;
+}
+
+@media only screen and(max-width: 767px) {
+    .tentang-put{
+        width: 100%;
+        float: none;
+        margin: 25px 0px ;
+    }
+    .tentang-ku{
+        width: 100%;
+        float: none;
+        margin: 25px 0px ;
+    }
+}
+
+footer {
+    background: #948783;
+    color: #eee2e2;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 120%;
+}
